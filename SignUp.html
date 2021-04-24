@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/fontsforsignpgs.css">
+    <title>Sign up Smartacademy</title>
+</head>
+<body>
+    <div class="firstpage-wrapper flex">
+        <div class="background-wrapper firstPageContainer">
+            <img class="firstPageContainer bckgr" src="images/signInUpimg/girl.png" alt="smartacademy">
+        </div>
+        <div class="signin-wrapper firstPageContainer flex-column justify-center align-center">
+            <div id="h-s2" class="h-s2 justify-center align-center flex-column">
+                <h1 class="signinh1">Smartacademy</h1>
+                <h2 class="signinh2">Welcome back! Please login to your account.</h2>
+            </div>
+            <span class="line1">|</span>
+            <span class="line2">|</span>
+            <span class="line3">|</span>
+            <form  action="action_page.php" method="post">
+                <div class="signupinputs flex">
+                    <div class="firstname-wrapper flex-column">
+                        <input id="firstname" type="text" placeholder="Firstname" name="Firstname" required>
+                        <label id="firstnamelabel" for="password">Enter your Firstname</label>
+                    </div>
+                    <div class="lastname-wrapper flex-column">
+                        <input id="lastname" type="text" placeholder="Lastname" name="Lastname" required>
+                        <label id="lastnamelabel" for="Lastname">Enter your Lastname</label>
+                    </div>
+                </div>
+                <div class="username-wrapper flex-column">
+                    <input id="username2" type="text" placeholder="Username" name="username" title="Must contain  at least 4 or more characters"pattern=".{4,}" required>
+                    <label id="usernamelabel" for="Username">Please enter your username</label>
+                </div>
+                <div class="email-wrapper flex-column">
+                    <input id="email" type="email" placeholder="Email" name="email"title="Must contain at least 8 or more characters"pattern=".{8,}" required>
+                    <label id="emaillabel" for="Email">Enter your Email</label>
+                </div>
+                <div class="password-wrapper flex-column">
+                    <input id="password" type="password" placeholder="Password" name="password"title="Must contain at least one number and at least 8 or more characters"pattern="(?=.*\d)(?=.*[a-z]).{8,}" required>
+                    <label id="passwordlabel" for="password">Enter your password</label>
+                </div>
+                <div class="corfirmpassword-wrapper flex-column">
+                    <input id="corfirmpassword" type="password" placeholder="Repeat Password" name="corfirmpassword"title="Must contain at least one number and at least 8 or more characters"pattern="(?=.*\d)(?=.*[a-z]).{8,}" required>
+                    <label id="corfirmpasswordlabel" for="password">Corfirm your password</label>
+                </div>
+                <div class="terms-conditions flex">
+                    <label class="remember align-center flex">
+                        <input id="checkbox" type="checkbox"  name="remember"> I agree with terms and conditions
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="sign-up2 flex">
+                    <button id="signupbtn2" type="submit"   type="submit" method="post">Sign Up</button>
+                </div>
+            </form>
+            <div class="tosignin">
+                <a href="index.html" class="signins"><span class="alreadytext">Already have an account? Sign in.</span></a>
+            </div>
+            <footer class="footer-wrapper2">
+                <span class="policy">Term of use. Privacy policy</span>
+            </footer>
+        </div>
+    </div>
+    <script src="./javascript/signpage.js"></script>
+    <script src="./javascript/signup.js"></script>
+</body>
+</html>

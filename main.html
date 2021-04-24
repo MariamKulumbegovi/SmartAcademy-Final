@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontsforsignpgs.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="flexclass ">
+        <header class="header-wrapper">
+            <nav class="menu-wrapper">
+                <div class="togglemenu-wrapper flex align-items-center justify-content-space-around">
+                    <div class="title-wrapper">
+                        <h1 class="maintitle">Smartacademy</h1>
+                    </div>
+                    <div class="toggle-wrapper">
+                        <img id="toggleicon" src="images/homepageimg/toggleicon.svg" alt="toggleicon">
+                    </div>
+                </div>
+                <ul id="menuitemsul">
+                    <li class="items-li flex align-items-center">
+                    <a class="items-a flex" href="main.html">
+                            <img class="homeicon" src="images/homepageimg/homeicon.svg" alt="home"> <p class="item-li">Home</p>
+                        </a>
+                    </li>
+                    <li class="items-li flex align-items-center">
+                        <a class="items-a flex align-items-center" href="dashboard.html"> 
+                            <img class="dashboardicon" src="images/homepageimg/dashboardion.svg" alt="Smartacademydashboard"> <p class="item-li">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="items-li flex align-items-center">
+                        <a class="items-a flex align-items-center" href="products.html"> 
+                            <img class="productsicon" src="images/homepageimg/productsicon.svg" alt="Smartacademyproducts"> <p class="item-li">Products</p>
+                        </a>
+                    </li>
+                    <li class="items-li flex align-items-center">
+                        <a class="items-a flex align-items-center" href="products.html"> 
+                            <img class="settingsicon" src="images/homepageimg/settingsicon.svg" alt="Smartacademysettings"> <p class="item-li">Settings</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="nav2-wrapper">
+            <nav class="nav2 justify-content-flex-end flex">
+                <ul class="nav2-ul flex align-items-center  ">
+                    <a href="#" class="navicons-a">
+                        <li class="items-li2">
+                            <img src="images/homepageimg/supporticon.svg" alt="support Smartacademy">
+                        </li>
+                    </a>
+                    <a href="#" class="navicons-a">
+                        <li class="items-li2">
+                            <img src="images/homepageimg/chaticon.svg" alt="chat Smartacademy">
+                        </li>
+                    </a>
+                    <a href="#" class="navicons-a notificationicon">
+                        <li class="items-li2">
+                            <img src="images/homepageimg/notification.svg" alt="notifications Smartacademy">
+                        </li>
+                    </a>
+                    <li class="items-li2">
+                         <img src="images/homepageimg/divider.svg">
+                     </li>
+                </ul>
+                    <div class="customer flex align-items-center">
+                        <em class="name">John Doe</em>
+                        <img id="clicktoggle" src="images/homepageimg/downarrowicon.svg" >
+                        <img src="images/homepageimg/Avatar.png" alt="avatar">
+                    </div>
+            </nav>
+            <div id="navtogglewrapper">
+                <div class="navtoggle align-items-center justify-content-center">
+                    <ul class="toggle-ul">
+                        <a href="#" class="toggle-a "> 
+                            <li class="toggle-li flex align-items-center justify-content-center"><span class="status">Status:</span>Online</li>
+                        </a>
+                        <a href="#" class="toggle-a"> 
+                            <li class="toggle-li  flex align-items-center justify-content-center">Account Settings</li>
+                        </a>
+                        <a href="#" class="toggle-a"> 
+                            <li class="toggle-li  flex align-items-center justify-content-center">Feedback</li>
+                        </a>
+                        <a href="index.html" class="toggle-a"> 
+                            <li class="toggle-li  flex align-items-center justify-content-center">Logout</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="todotitle-wrapper">
+                    <h1 class="todotitle">Todolist</h1>
+                </div>
+                <div class="todocenter">
+                    <div class="todo-wrapper">
+                        <div class="alltodoh2-wrapper flex justify-content-space-between">
+                            <h2 class="alltodo2">All todo</h2>
+                            <button id="addtodobtn">Add Todo</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="h3-close flex justify-content-space-between">
+                                        <h3 class="inside-addtodo-title">Add todo</h3>
+                                        <button id="close" onclick="myModal.style.display = 'none'">╳</button>
+                                    </div>
+                                    <input id="todoinput" type="text" placeholder="Title">
+                                    <input id="todoinputCompleted" type="text" placeholder="Is completed(true or false)">
+                                    <input id="todoinputcreator" type="text" placeholder="Created by">
+                                    <input id="todoinputdate" type="text" placeholder="Create date">
+                                    <input id="todoinputupdatedate" type="text" placeholder="Update date">
+                                    
+                                    <div class="save-placer">
+                                        <button id="todosavebtn">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="todolist-wrapper" class="todolist-wrapper">
+                            <table id="todotable" class="display" style="width:100%">
+                                <tr id="titlesth">
+                                <th class="taskname">Task name</th>
+                                <th class="iscompletedth">Is completed</th>
+                                <th>Created By</th>
+                                <th>Create Date</th>
+                                <th>Update Date</th>
+                                <th class="actions"> Actions</th>
+                                </tr>
+                                <tr class="list" id="list"></tr>
+                            </table>
+                            <div class="pagination-wrapper">
+                                <nav class="flex justify-content-flex-end" aria-label="todo list navigation"  >
+                                    <ul id="pagination" class="pagination flex">
+                                    
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>

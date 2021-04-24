@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="css/fontsforsignpgs.css">
+    <title>login Smartacademy</title>
+</head>
+<body>
+    <div class="firstpage-wrapper flex">
+        <div class="background-wrapper firstPageContainer">
+            <img class="firstPageContainer bckgr" src="images/signInUpimg/girl.png" alt="smartacademy">
+        </div>
+        <div class="signin-wrapper firstPageContainer flex-column justify-center align-center">
+            <span class="line1">|</span>
+            <span class="line2">|</span>
+            <span class="line3">|</span>
+            <div class="h-s justify-center align-center flex-column">
+                <h1 class="signinh1">Smartacademy</h1>
+                <h2 class="signinh2">Welcome back! Please login to your account.</h2>
+            </div>
+            <form action="action_page.php" method="post">
+                <div class="inputs flex-column">
+                  <input id="username" type="email" placeholder="Username" name="username" title="Must contain  at least 8 or more characters"pattern=".{8,}" required>
+                  <label id="usernamelabel" for="Username">Please enter your Email</label>
+                  <input id="password" type="password" placeholder="Password" name="password"title="Must contain at least one number and at least 8 or more characters"pattern="(?=.*\d)(?=.*[a-z]).{8,}" required>
+                  <label id="passwordlabel" for="password">Enter your password</label>
+                </div>
+                <div class="remember-forgot flex">
+                    <label class="remember align-center flex">
+                        <input id="checkbox" type="checkbox"  name="remember"> Remember me
+                        <span class="checkmark"></span>
+                    </label>
+                  <span class="forgotpassword">Forgot password</span>
+                </div>
+                <div class="signs flex">
+                    <button id="loginbtn"  type="submit" method:"post">Login</button>
+                    <button id="signupbtn"   onclick="location.href = 'SignUp.html';" type="submit">Sign Up</button>
+                </div>
+            </form>
+            <footer class="footer-wrapper">
+                <span class="policy">Term of use. Privacy policy</span>
+            </footer>
+        </div>
+    </div>
+    <script src="./javascript/signpage.js"></script>
+</body>
+</html>

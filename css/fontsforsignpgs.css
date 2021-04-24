@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'SourceSansPro-bold';
+    src: url('../fonts/fontsforsignpgs/');
+    src: url('../fonts/fontsforsignpgs/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Bold.woff2') format('woff2'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Bold.woff') format('woff'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Bold.ttf') format('truetype'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-regular';
+    src: url('../fonts/fontsforsignpgs/SourceSansPro-Regular.eot');
+    src: url('../fonts/fontsforsignpgs/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Regular.woff') format('woff'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Regular.ttf') format('truetype'),
+        url('../fonts/fontsforsignpgs/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

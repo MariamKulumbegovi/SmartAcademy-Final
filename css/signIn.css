@@ -1,0 +1,301 @@
+html, .firstpage-wrapper, .background-wrapper, .bckgr {
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.firstPageContainer {
+    max-width: 800px;
+    width: 100%;
+}
+.h-s {
+    line-height: 2;
+}
+.signinh1 {
+    font-size: 35px;
+    font-family: 'SourceSansPro-bold';
+     color:#43425D;
+     letter-spacing: 10px;
+}
+.signinh2 {
+    font-size: 18px;
+    font-family: 'SourceSansPro-regular';
+    color:#707070;
+}
+.inputs {
+    margin-top: 55px;
+    height: 115px;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-around;
+}
+#username, #password {
+   width: 400px;
+   border-bottom: solid #E9E9F0;
+   padding: 15px;
+   margin-top: 10px;
+   transition-property: all;
+   transition-delay: 0.2s;
+}
+#username:hover, #password:hover {
+    border-bottom: solid #4D4F5C;; 
+ }
+ #username:focus, #password:focus{
+    border-bottom:solid#3B86FF;
+ }
+::placeholder {
+    color:#707070;
+    font-size: 15px;
+    font-family: 'SourceSansPro-regular';
+    transition-property: all;
+   transition-delay: 0.2s;
+}
+
+#username:hover::placeholder, #password:hover::placeholder {
+    color: #4D4F5C;
+  }
+.remember-forgot {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+#checkbox {
+    margin-right: 10px;
+
+}
+.remember, .forgotpassword {
+    color: #43425D;
+    font-size: 15px;
+    font-family: 'SourceSansPro-regular';
+}
+.signs {
+    margin-top: 65px;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-around;
+}
+#loginbtn, #signupbtn {
+    max-width: 185px;
+    width: 100%;
+    height: 50px;
+    background-color: #43425D;
+    border-radius: 4px;
+    border:solid 1px #4D4F5C;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'SourceSansPro-regular';
+}
+#signupbtn {
+    background-color: #fff;
+    border-color: #43425D;
+    color: #4D4F5C;
+}
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+.signin-wrapper {
+    position: relative;
+}
+.footer-wrapper {
+    position: absolute;
+    bottom: 20px;
+}
+.policy {
+    font-size: 11px;
+    font-family: 'SourceSansPro-regular';
+    color: #43425D;
+}
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      border-color: ;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    background-color: white;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+#loginbtn:active {
+    background-color:#2F2E50;
+    
+
+}
+#signupbtn:active{
+    border-color: #2F2E50;
+    color: #2F2E50;
+    
+
+}
+#passwordlabel, #usernamelabel{
+    margin-top: 10px;
+    color: #707070;
+    font-size: 12px;
+    transition-property: all;
+   transition-delay: 0.2s;
+   transition-duration: 0.2s;
+}
+#passwordlabel:hover, #usernamelabel:hover {
+    color: #4D4F5C;
+}
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+  }
+  .valid {
+      color: #4D4F5C;
+
+  }
+  .line1, .line2, .line3 {
+    display: none;
+ }
+
+ @media screen and (max-width:1024px) {
+     #password, #username {
+         width: 250px;
+     }
+     #signupbtn {
+         margin-left: 10px;
+         
+     }
+ }
+
+
+ @media screen and (max-width: 768px) {
+
+	.background-wrapper {
+        display: none;
+    }
+    body {
+        background-color:#d2d2e1;
+     }
+     .line1 {
+      display: inline;
+       width: 4px;
+       height: 400px;
+      background-color: #43425D;
+       position: absolute;
+       left: 10px;
+       animation-name: line1;
+       animation-duration: 3s;
+       animation-delay: 0s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+       
+   
+   }
+   
+   @keyframes line1 {
+       0% {
+           bottom:0px;
+       }
+       100% {
+           bottom: 770px;
+   
+       }
+   }
+   .line2 {
+      display: inline;
+       width: 4px;
+       height: 400px;
+      background-color:#43425D;
+       position: absolute;
+       left: 20px;
+       animation-name: line2;
+       animation-duration: 6s;
+       animation-delay: 0s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+       
+   
+   }
+   
+   @keyframes line2 {
+       0% {
+           bottom:800px;
+       }
+       100% {
+           bottom: -200px;
+   
+       }
+   }
+   .line3 {
+    display: inline;
+     width: 4px;
+     height: 400px;
+    background-color:#43425D;
+     position: absolute;
+     left: 30px;
+     animation-name: line3;
+     animation-duration: 3s;
+     animation-delay: 0s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     
+ 
+ }
+ 
+ @keyframes line3 {
+     0% {
+         bottom:770px;
+     }
+     100% {
+         bottom: -200px;
+ 
+     }
+ }
+
+}
+
+@media screen and (max-width: 480px) {
+    .line3 {
+        display: none;
+    }
+
+    .signinh1 {
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+    .signinh2 {
+        font-size: 12px;
+    }
+    
+}
