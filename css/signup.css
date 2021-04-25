@@ -1,242 +1,411 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 #firstname, #lastname {
-    width: 187px;
-    border-bottom: solid #E9E9F0;
-    padding: 15px;
-    margin-top: 10px;
-    transition-property: all;
-    transition-delay: 0.2s;
- }
- #lastname {
-    margin-left: 25px;
- }
- #firstname:hover, #lastname:hover {
-     border-bottom: solid #4D4F5C;; 
-  }
-  #firstname:focus, #lastname:focus{
-     border-bottom:solid#3B86FF;
-  }
- ::placeholder {
-     color:#707070;
-     font-size: 15px;
-     transition-property: all;
-    transition-delay: 0.2s;
- }
- 
- #firstname:hover::placeholder, #lastname:hover::placeholder {
-     color: #4D4F5C;
-   }
-
-   #firstnamelabel, #lastnamelabel, #emaillabel, #corfirmpasswordlabel{
-      margin-top: 10px;
-      color: #707070;
-      font-size: 12px;
-      transition-property: all;
-     transition-delay: 0.2s;
-     transition-duration: 0.2s;
-  }
-  #lastnamelabel {
-     margin-left: 25px;
-  }
-  #username2,#email, #corfirmpassword{
-   width: 400px;
+   width: 187px;
    border-bottom: solid #E9E9F0;
    padding: 15px;
    margin-top: 10px;
+   -webkit-transition-property: all;
+   -o-transition-property: all;
    transition-property: all;
-   transition-delay: 0.2s;
+   -webkit-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+           transition-delay: 0.2s;
 }
-#username2:hover, #email:hover, #corfirmpassword:hover  {
+#lastname {
+   margin-left: 25px;
+}
+#firstname:hover, #lastname:hover {
     border-bottom: solid #4D4F5C;; 
  }
- #username2:focus, #email:focus, #corfirmpassword:focus {
+ #firstname:focus, #lastname:focus{
     border-bottom:solid#3B86FF;
  }
-::placeholder {
+::-webkit-input-placeholder {
     color:#707070;
     font-size: 15px;
+    -webkit-transition-property: all;
+    transition-property: all;
+   -webkit-transition-delay: 0.2s;
+           transition-delay: 0.2s;
+}
+::-moz-placeholder {
+    color:#707070;
+    font-size: 15px;
+    -moz-transition-property: all;
     transition-property: all;
    transition-delay: 0.2s;
 }
+:-ms-input-placeholder {
+    color:#707070;
+    font-size: 15px;
+    -ms-transition-property: all;
+    transition-property: all;
+   transition-delay: 0.2s;
+}
+::-ms-input-placeholder {
+    color:#707070;
+    font-size: 15px;
+    -ms-transition-property: all;
+    transition-property: all;
+   transition-delay: 0.2s;
+}
+::placeholder {
+    color:#707070;
+    font-size: 15px;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+   -webkit-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+           transition-delay: 0.2s;
+}
 
-#username2:hover::placeholder, #email:hover::placeholder {
+#firstname:hover::-webkit-input-placeholder, #lastname:hover::-webkit-input-placeholder {
     color: #4D4F5C;
   }
 
+#firstname:hover::-moz-placeholder, #lastname:hover::-moz-placeholder {
+    color: #4D4F5C;
+  }
+
+#firstname:hover:-ms-input-placeholder, #lastname:hover:-ms-input-placeholder {
+    color: #4D4F5C;
+  }
+
+#firstname:hover::-ms-input-placeholder, #lastname:hover::-ms-input-placeholder {
+    color: #4D4F5C;
+  }
+
+#firstname:hover::placeholder, #lastname:hover::placeholder {
+    color: #4D4F5C;
+  }
+
+  #firstnamelabel, #lastnamelabel, #emaillabel, #corfirmpasswordlabel{
+     margin-top: 10px;
+     color: #707070;
+     font-size: 12px;
+     -webkit-transition-property: all;
+     -o-transition-property: all;
+     transition-property: all;
+    -webkit-transition-delay: 0.2s;
+         -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+ }
+ #lastnamelabel {
+    margin-left: 25px;
+ }
+ #username2,#email, #corfirmpassword{
+  width: 400px;
+  border-bottom: solid #E9E9F0;
+  padding: 15px;
+  margin-top: 10px;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+#username2:hover, #email:hover, #corfirmpassword:hover  {
+   border-bottom: solid #4D4F5C;; 
+}
+#username2:focus, #email:focus, #corfirmpassword:focus {
+   border-bottom:solid#3B86FF;
+}
+::-webkit-input-placeholder {
+   color:#707070;
+   font-size: 15px;
+   -webkit-transition-property: all;
+   transition-property: all;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+::-moz-placeholder {
+   color:#707070;
+   font-size: 15px;
+   -moz-transition-property: all;
+   transition-property: all;
+  transition-delay: 0.2s;
+}
+:-ms-input-placeholder {
+   color:#707070;
+   font-size: 15px;
+   -ms-transition-property: all;
+   transition-property: all;
+  transition-delay: 0.2s;
+}
+::-ms-input-placeholder {
+   color:#707070;
+   font-size: 15px;
+   -ms-transition-property: all;
+   transition-property: all;
+  transition-delay: 0.2s;
+}
+::placeholder {
+   color:#707070;
+   font-size: 15px;
+   -webkit-transition-property: all;
+   -o-transition-property: all;
+   transition-property: all;
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+#username2:hover::-webkit-input-placeholder, #email:hover::-webkit-input-placeholder {
+   color: #4D4F5C;
+ }
+
+#username2:hover::-moz-placeholder, #email:hover::-moz-placeholder {
+   color: #4D4F5C;
+ }
+
+#username2:hover:-ms-input-placeholder, #email:hover:-ms-input-placeholder {
+   color: #4D4F5C;
+ }
+
+#username2:hover::-ms-input-placeholder, #email:hover::-ms-input-placeholder {
+   color: #4D4F5C;
+ }
+
+#username2:hover::placeholder, #email:hover::placeholder {
+   color: #4D4F5C;
+ }
+
 #signupbtn2 {
-      max-width: 185px;
-      width: 100%;
-      height: 50px;
-      background-color: #43425D;
-      border-radius: 4px;
-      border:solid 1px #4D4F5C;
-      color: #fff;
-      font-size: 18px;
-      font-family: 'SourceSansPro-regular';
-  
+     max-width: 185px;
+     width: 100%;
+     height: 50px;
+     background-color: #43425D;
+     border-radius: 4px;
+     border:solid 1px #4D4F5C;
+     color: #fff;
+     font-size: 18px;
+     font-family: 'SourceSansPro-regular';
+ 
 }
 #signupbtn2:active{
-   border-color: #2F2E50;
-   color: #2F2E50;
-   
+  border-color: #2F2E50;
+  color: #2F2E50;
+  
 
 }
 .terms-conditions {
-   max-width: 400px;
-   width: 100%;
-   margin-top: 40px;
-   justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .sign-up2 {
-      margin-top: 42px;
-      max-width: 400px;
-      width: 100%;
-      justify-content: space-around;
-  
+     margin-top: 42px;
+     max-width: 400px;
+     width: 100%;
+     -ms-flex-pack: distribute;
+         justify-content: space-around;
+ 
 }
 .tosignin {
-   margin-top: 40px;
+  margin-top: 40px;
 }
 
 .signins {
-   text-decoration: underline;
+  text-decoration: underline;
 }
 .alreadytext {
-   color: #43425D;
-   font-family: 'SourceSansPro-regular';
-   font-size: 15px;
+  color: #43425D;
+  font-family: 'SourceSansPro-regular';
+  font-size: 15px;
 }
 .h-s2 {
-   line-height: 2;
-   margin-top: 150px;
+  line-height: 2;
+  margin-top: 150px;
 }
 .signin-wrapper {
-   overflow-y: scroll;
+  overflow-y: scroll;
 }
 .footer-wrapper2 {
-   margin: 100px 0 20px 0;
+  margin: 100px 0 20px 0;
 }
 .line1, .line2, .line3 {
-   display: none;
+  display: none;
 }
 @media screen and (max-width:1024px) {
-   #password, #username2, #email, #corfirmpassword {
-       width: 250px;
-   }
-   #firstname, #lastname {
-      width: 100px;
-   }
-   
-   #signupbtn {
-       margin-left: 10px;
-       
-   }
+  #password, #username2, #email, #corfirmpassword {
+      width: 250px;
+  }
+  #firstname, #lastname {
+     width: 100px;
+  }
+  
+  #signupbtn {
+      margin-left: 10px;
+      
+  }
 }
 
 
 @media screen and (max-width: 768px) {
 
- .background-wrapper {
-      display: none;
-  }
-  .signupinputs {
-     justify-content: center;
-  }
-  body {
-     background-color:#d2d2e1;
-  }
-  .line1 {
-   display: inline;
-	width: 4px;
-	height: 400px;
-   background-color: #43425D;
-	position: absolute;
-	left: 10px;
-	animation-name: line1;
-	animation-duration: 3s;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	
+.background-wrapper {
+     display: none;
+ }
+ .signupinputs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+ }
+ body {
+    background-color:#d2d2e1;
+ }
+ .line1 {
+  display: inline;
+  width: 4px;
+  height: 400px;
+  background-color: #43425D;
+  position: absolute;
+  left: 10px;
+  -webkit-animation-name: line1;
+          animation-name: line1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  
 
+}
+
+@-webkit-keyframes line1 {
+  0% {
+     bottom:0px;
+  }
+  100% {
+     bottom: 770px;
+
+  }
 }
 
 @keyframes line1 {
-	0% {
-		bottom:0px;
-	}
-	100% {
-		bottom: 770px;
+  0% {
+     bottom:0px;
+  }
+  100% {
+     bottom: 770px;
 
-	}
+  }
 }
 .line2 {
-   display: inline;
-	width: 4px;
-	height: 400px;
-   background-color:#43425D;
-	position: absolute;
-	left: 20px;
-	animation-name: line2;
-	animation-duration: 6s;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	
+  display: inline;
+  width: 4px;
+  height: 400px;
+  background-color:#43425D;
+  position: absolute;
+  left: 20px;
+  -webkit-animation-name: line2;
+          animation-name: line2;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  
 
+}
+
+@-webkit-keyframes line2 {
+  0% {
+     bottom:800px;
+  }
+  100% {
+     bottom: -200px;
+
+  }
 }
 
 @keyframes line2 {
-	0% {
-		bottom:800px;
-	}
-	100% {
-		bottom: -200px;
+  0% {
+     bottom:800px;
+  }
+  100% {
+     bottom: -200px;
 
-	}
+  }
 }
 .line3 {
-   display: inline;
-	width: 4px;
-	height: 400px;
-   background-color:#43425D;
-	position: absolute;
-	left: 30px;
-	animation-name: line3;
-	animation-duration: 3s;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	
+  display: inline;
+  width: 4px;
+  height: 400px;
+  background-color:#43425D;
+  position: absolute;
+  left: 30px;
+  -webkit-animation-name: line3;
+          animation-name: line3;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  
 
+}
+
+@-webkit-keyframes line3 {
+  0% {
+     bottom:770px;
+  }
+  100% {
+     bottom: -200px;
+
+  }
 }
 
 @keyframes line3 {
-	0% {
-		bottom:770px;
-	}
-	100% {
-		bottom: -200px;
+  0% {
+     bottom:770px;
+  }
+  100% {
+     bottom: -200px;
 
-	}
+  }
 }
 
 }
 
 @media screen and (max-width: 480px) {
-   .line3 {
-      display: none;
-   }
+  .line3 {
+     display: none;
+  }
 
-  .signinh1 {
-     font-size: 20px;
-      letter-spacing: normal;
-  }
-  .signinh2 {
-      font-size: 12px;
-  }
-  .h-s2 {
-   margin-top: 250px;
+ .signinh1 {
+    font-size: 20px;
+     letter-spacing: normal;
+ }
+ .signinh2 {
+     font-size: 12px;
+ }
+ .h-s2 {
+  margin-top: 250px;
 }
 
 }
