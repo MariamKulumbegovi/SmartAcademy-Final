@@ -226,7 +226,9 @@ body{
     display: inline-block;
     position: fixed;
     z-index: 30;
-   
+}
+#clicktoggle.rotateit {
+    transform: rotateX(180deg);
 }
 .todotitle {
     font-size: 28px;
@@ -712,6 +714,9 @@ th {
     
     
 }
+
+
+
 @media screen and  (max-width: 520px){
     .togglemenu-wrapper {
         width: 50px;
@@ -751,10 +756,18 @@ th {
        margin: 0px 3px 0px 3px;
     }
     th {
-        font-size: 10px;
+        font-size: 11px;
     }
     .tds {
         font-size: 10px;
     }
-    
+    .editbtn {
+        font-size: 9px;
+    }
+    .deletebtn {
+        font-size: 9px;
+    }
+    .alltodo2 {
+        font-size: 15px;
+    }
 }

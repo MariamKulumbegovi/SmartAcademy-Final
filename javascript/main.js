@@ -13,6 +13,8 @@ toggleEl.addEventListener('click',function () {
 
  navclicktoggle.addEventListener('click',function () {
      navtoggle.classList.toggle('show')
+     let rotate=document.getElementById('clicktoggle')
+     rotate.classList.toggle('rotateit')
         
  })
 
