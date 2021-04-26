@@ -770,4 +770,8 @@ th {
     .alltodo2 {
         font-size: 15px;
     }
+    .alltodoh2-wrapper {
+        padding: 5px 5px 0px 5px;
+    }
+    
 }
