@@ -750,5 +750,11 @@ th {
     .alltodoh2-wrapper {
        margin: 0px 3px 0px 3px;
     }
+    th {
+        font-size: 10px;
+    }
+    .tds {
+        font-size: 10px;
+    }
     
 }
